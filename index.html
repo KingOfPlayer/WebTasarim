@@ -834,8 +834,12 @@
 
 
             </h2>
+            <div class="slider-controls">
+                <button type="button" class="VitaminsSupplements-prev slider-prev"></button>
+                <button type="button" class="VitaminsSupplements-next slider-next"></button>
+            </div>
             <div class="carousel-wrap layout_padding2">
-                <div class="owl-carousel owl-2">
+                <div class="VitaminsSupplements slider">
                     <div class="item">
                         <div class="box">
                             <div class="btn_container">
@@ -1257,9 +1261,9 @@
 
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    
     <script>
-        let MedicineHealthSliderShowCount = 4; 
+        let MedicineHealthSliderShowCount = 4;
         $(document).ready(function () {
             $('.MedicineHealthSlider').slick({
                 slidesToShow: MedicineHealthSliderShowCount,
@@ -1304,13 +1308,13 @@
                 ]
             });
 
-            $('.MedicineHealthSlider').slick({
+            $('.VitaminsSupplements').slick({
                 slidesToShow: MedicineHealthSliderShowCount,
                 slidesToScroll: 1,
                 infinite: true,
                 mobileFirst: true,
-                prevArrow: '.MedicineHealthSlider-prev',
-                nextArrow: '.MedicineHealthSlider-next',
+                prevArrow: '.VitaminsSupplements-prev',
+                nextArrow: '.VitaminsSupplements-next',
                 responsive: [
                     {
                         breakpoint: 1440,
