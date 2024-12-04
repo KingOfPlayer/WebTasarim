@@ -155,13 +155,11 @@
         <!-- slider section -->
         <section class="slider_section position-relative">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                <div class="test">
+                    
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <div class="HeaderSlider">
+                    <div class="item">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4">
@@ -193,7 +191,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="item">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4">
@@ -225,7 +223,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="item">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4">
@@ -258,12 +256,9 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="sr-only">Next</span>
-                </button>
+
+                <button type="button" class="HeaderSlider-prev carousel-control-prev"><span class="sr-only">Previous</span></button>
+                <button type="button" class="HeaderSlider-next carousel-control-next"><span class="sr-only">Next</span></button>
             </div>
         </section>
         <!-- end slider section -->
@@ -835,11 +830,11 @@
 
             </h2>
             <div class="slider-controls">
-                <button type="button" class="VitaminsSupplements-prev slider-prev"></button>
-                <button type="button" class="VitaminsSupplements-next slider-next"></button>
+                <button type="button" class="VitaminsSupplementsSlider-prev slider-prev"></button>
+                <button type="button" class="VitaminsSupplementsSlider-next slider-next"></button>
             </div>
             <div class="carousel-wrap layout_padding2">
-                <div class="VitaminsSupplements slider">
+                <div class="VitaminsSupplementsSlider slider">
                     <div class="item">
                         <div class="box">
                             <div class="btn_container">
@@ -1263,10 +1258,8 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
     <script>
-        let MedicineHealthSliderShowCount = 4;
         $(document).ready(function () {
             $('.MedicineHealthSlider').slick({
-                slidesToShow: MedicineHealthSliderShowCount,
                 slidesToScroll: 1,
                 infinite: true,
                 mobileFirst: true,
@@ -1308,13 +1301,12 @@
                 ]
             });
 
-            $('.VitaminsSupplements').slick({
-                slidesToShow: MedicineHealthSliderShowCount,
+            $('.VitaminsSupplementsSlider').slick({
                 slidesToScroll: 1,
                 infinite: true,
                 mobileFirst: true,
-                prevArrow: '.VitaminsSupplements-prev',
-                nextArrow: '.VitaminsSupplements-next',
+                prevArrow: '.VitaminsSupplementsSlider-prev',
+                nextArrow: '.VitaminsSupplementsSlider-next',
                 responsive: [
                     {
                         breakpoint: 1440,
@@ -1349,6 +1341,16 @@
                         }
                     }
                 ]
+            });
+            $('.HeaderSlider').slick({
+                dots:true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                mobileFirst: true,
+                prevArrow: '.HeaderSlider-prev',
+                nextArrow: '.HeaderSlider-next',
+                dotsClass: 'HeaderSlider-dots'
             });
         });
     </script>
