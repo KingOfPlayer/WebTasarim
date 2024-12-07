@@ -95,6 +95,7 @@
 }
 
 .HeaderSlider-dots {
+    padding: 0px;
     display: flex;
     justify-content: center;
 }
@@ -147,4 +148,8 @@
 .color-white:focus-visible {
     box-shadow: 0 0 0 0;
     outline: -webkit-focus-ring-color auto 1px;
+}
+
+.slider_section {
+    overflow:hidden;
 }
