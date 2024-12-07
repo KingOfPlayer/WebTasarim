@@ -12,14 +12,19 @@
     .slider_section.position-relative {
         padding: 120px 0;
     }
-}
 
-@media (max-width: 768px) {
+    .hero_area {
+        height: auto;
+    }
 
     .slider_section .detail-box {
         margin-top: 20px;
         text-align: center;
     }
+}
+
+@media (max-width: 768px) {
+
 
     .contact_section {
         padding-left: 15px;
@@ -47,9 +52,6 @@
         width: auto;
     }
 
-    .hero_area {
-        height: auto;
-    }
 }
 
 @media (max-width: 576px) {
