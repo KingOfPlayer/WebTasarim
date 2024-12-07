@@ -153,3 +153,7 @@
 .slider_section {
     overflow:hidden;
 }
+
+.box.flex-fill.m-1{
+    color:white;
+}
