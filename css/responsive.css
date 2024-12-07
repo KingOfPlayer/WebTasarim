@@ -46,6 +46,10 @@
     .footer_section p {
         width: auto;
     }
+
+    .hero_area {
+        height: auto;
+    }
 }
 
 @media (max-width: 576px) {
