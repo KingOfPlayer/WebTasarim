@@ -763,11 +763,11 @@ a:focus {
 }
 
 .contact_section .detail-box {
-  background-image: url(../images/contact-bg.jpg);
-  color: #ffffff;
-  padding: 140px 15%;
-  text-align: center;
-  margin-top: 30px;
+    background-color: #10e7f4;
+    color: #ffffff;
+    padding: 140px 15%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .contact_section .detail-box h3 {

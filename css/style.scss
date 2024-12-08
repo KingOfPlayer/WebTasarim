@@ -689,57 +689,57 @@ a:focus {
 
 // contact section
 .contact_section {
-  .custom_heading-container {
-    justify-content: start;
+    .custom_heading-container {
+        justify-content: start;
 
-    h2 {
-      &::after {
-        left: 0;
-        transform: none;
-      }
-    }
-  }
-
-  .form_contaier {
-    form {
-      .form-group {
-        margin-bottom: 20px;
-      }
-
-      .form-control {
-        border-radius: 0;
-        height: 35px;
-        box-shadow: none;
-
-        &#exampleInputMessage {
-          height: 100px;
+        h2 {
+            &::after {
+                left: 0;
+                transform: none;
+            }
         }
-      }
-
-      button {
-        @include hero_btn(#121313, $white, 10px, 50px);
-        border-radius: 5px;
-        margin-top: 15px;
-      }
-    }
-  }
-
-  .detail-box {
-    background-image: url(../images/contact-bg.jpg);
-    color: $white;
-    padding: 140px 15%;
-    text-align: center;
-    margin-top: 30px;
-
-    h3 {
-      font-weight: bold;
-      font-size: 32px;
     }
 
-    p {
-      margin-top: 25px;
+    .form_contaier {
+        form {
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            .form-control {
+                border-radius: 0;
+                height: 35px;
+                box-shadow: none;
+
+                &#exampleInputMessage {
+                    height: 100px;
+                }
+            }
+
+            button {
+                @include hero_btn(#121313, $white, 10px, 50px);
+                border-radius: 5px;
+                margin-top: 15px;
+            }
+        }
     }
-  }
+
+    .detail-box {
+        background-color: #10e7f4;
+        color: $white;
+        padding: 140px 15%;
+        text-align: center;
+        margin-top: 30px;
+
+        h3 {
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        p {
+            margin-top: 25px;
+        }
+    }
 }
 
 // end contact section

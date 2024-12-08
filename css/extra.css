@@ -205,3 +205,16 @@
     border-radius: 5px;
     margin-top: 15px;
 }
+
+.HeaderSlider .img-box img {
+    width: auto;
+    max-height:300px;
+}
+
+.slider-link{
+    color: white;
+}
+
+.slider-link:hover {
+    color: gray;
+}
