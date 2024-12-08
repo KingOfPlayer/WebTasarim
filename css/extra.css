@@ -206,7 +206,12 @@
     margin-top: 15px;
 }
 
-.HeaderSlider .img-box img {
+.HeaderSlider .img-box a {
+    width: auto;
+    max-height: 300px;
+}
+
+.HeaderSlider .img-box a img {
     width: auto;
     max-height:300px;
 }
