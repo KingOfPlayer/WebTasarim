@@ -107,3 +107,29 @@
 .slider_section {
     overflow:hidden;
 }
+
+.drager-title {
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 0) 36%, rgba(16, 231, 244, 1) 71%),url(/images/drager/header.webp);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.drager-title .detail-box h1 span {
+    font-size: 4rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.drager-title .detail-box p {
+    color: #ffffff;
+}
+
+.product-big-image{
+    height: 500px;
+}
+.product-big-image img{
+    height: 500px;
+}
