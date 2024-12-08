@@ -127,9 +127,44 @@
     color: #ffffff;
 }
 
-.product-big-image{
-    height: 500px;
+.product-big-image {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: 300px;
 }
-.product-big-image img{
-    height: 500px;
+
+.product-big-image img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: 300px;
+}
+
+
+.product-image-nav {
+    width: 300px;
+    height: 100px;
+}
+
+.product-image-nav img {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: 100px;
+}
+
+.tocontact_button:hover {
+    background-color: transparent;
+    color: #121313;
+}
+
+.tocontact_button {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #121313;
+    border: 1px solid #121313;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 15px;
 }
