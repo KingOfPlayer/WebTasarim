@@ -75,7 +75,7 @@
                                     Birimlerimiz
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/divisions/technic-service">Teknik ve Servis Birimi</a></li>
+                                    <li><a class="dropdown-item" href="/divisions/technic-service">Teknik Servis Birimi</a></li>
                                     <li><a class="dropdown-item" href="/divisions/sales-marketing">Satış ve Pazarlama Birimi</a></li>
                                 </ul>
                             </li>
@@ -176,7 +176,13 @@
                 </div>
             </div>
         </section>
+        <section class="about_section" style="background-color: white;">
+            <div class="container" style="background-color:white;">
+                <canvas id="Worker" style="width:100%;max-width:400px;max-height:400px;"></canvas>
+            </div>
+        </section>
     </section>
+
 
 
     <section class="fade-in layout_padding2">
@@ -312,6 +318,11 @@
                         </p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="about_section" style="background-color: white;">
+            <div class="container" style="background-color:white;">
+                <canvas id="Statistic" style="width:100%;max-width:400px;max-height:400px;"></canvas>
             </div>
         </section>
     </section>
@@ -490,6 +501,58 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js" integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+
+    <script>
+        var barColors = [
+            "#b7c88e",
+            "#3ca674",
+            "#6f743a",
+            "#a5c7fb"
+        ];
+
+        var WorkerxValues = ["Teknik Servis Uzmanı", "AR-GE Uzmanı", "Satış ve Pazarlama Personeli", "Yönetim ve Operasyon Uzmanı", ];
+        var WorkeryValues = [10, 5, 10, 5];
+        
+
+        new Chart("Worker", {
+            type: "pie",
+            data: {
+                labels: WorkerxValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: WorkeryValues
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "Çalışanlar Sayımız"
+                }
+            }
+        });
+
+        var StatisticxValues = ["Çalışılan Kamu Hastanesi", "Çalışılan Özel Hastane", "Klinik ve Tıp Merkezleri"];
+        var StatisticyValues = [15, 20, 10];
+
+        new Chart("Statistic", {
+            type: "pie",
+            data: {
+                labels: StatisticxValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: StatisticyValues
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "Hastane ve Kurum İş Birlikleri"
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
